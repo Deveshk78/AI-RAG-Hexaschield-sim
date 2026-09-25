@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Deep Tech Background Gradient -->
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B14" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#1C2541" />
+    </linearGradient>
+
+    <!-- Neon Cyan & Blue Gradients -->
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#A5F3FC" />
+    </linearGradient>
+
+    <!-- Drop Shadow / Glow filter -->
+    <filter id="bannerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#headerBg)" />
+
+  <!-- Cybernetic Grid Background Pattern -->
+  <g stroke="#1E293B" stroke-width="1" opacity="0.4">
+    <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M0 320 H1200" />
+    <path d="M150 0 V400 M300 0 V400 M450 0 V400 M600 0 V400 M750 0 V400 M900 0 V400 M1050 0 V400" />
+  </g>
+
+  <!-- Abstract Cygeniq Neural Web Overlay (Right Side) -->
+  <g opacity="0.25" stroke="url(#neonGlow)" stroke-width="1.5">
+    <line x1="850" y1="100" x2="980" y2="180" />
+    <line x1="980" y1="180" x2="1100" y2="120" />
+    <line x1="980" y1="180" x2="1050" y2="280" />
+    <line x1="1050" y1="280" x2="920" y2="320" />
+    <line x1="850" y1="100" x2="920" y2="320" />
+    
+    <circle cx="850" cy="100" r="5" fill="#00F2FE" />
+    <circle cx="980" cy="180" r="7" fill="#4FACFE" />
+    <circle cx="1100" cy="120" r="4" fill="#00F2FE" />
+    <circle cx="1050" cy="280" r="6" fill="#00F2FE" />
+    <circle cx="920" cy="320" r="5" fill="#4FACFE" />
+  </g>
+
+  <!-- Left Side: HexaShield Shield Emblem in Banner -->
+  <g transform="translate(90, 80)">
+    <!-- Outer Hexagon Matrix Ring -->
+    <polygon points="120,20 200,65 200,155 120,200 40,155 40,65" fill="none" stroke="#4FACFE" stroke-width="2" opacity="0.4" stroke-dasharray="6 4" />
+    
+    <!-- Shield Path -->
+    <path d="M120 40 C170 40, 210 55, 220 75 C220 160, 180 220, 120 255 C60 220, 20 160, 20 75 C30 55, 70 40, 120 40 Z" 
+          fill="#0B132B" 
+          stroke="url(#neonGlow)" 
+          stroke-width="6" 
+          filter="url(#bannerGlow)" />
+
+    <!-- Internal Neural Nodes inside Banner Shield -->
+    <g stroke="#00F2FE" stroke-width="2.5" opacity="0.9">
+      <line x1="120" y1="100" x2="90" y2="150" />
+      <line x1="120" y1="100" x2="150" y2="150" />
+      <line x1="90" y1="150" x2="120" y2="190" />
+      <line x1="150" y1="150" x2="120" y2="190" />
+      
+      <circle cx="120" cy="80" r="4" fill="#FFF" />
+      <circle cx="120" cy="100" r="6" fill="#00F2FE" />
+      <circle cx="90" cy="150" r="5" fill="#4FACFE" />
+      <circle cx="150" cy="150" r="5" fill="#4FACFE" />
+      <circle cx="120" cy="190" r="7" fill="#00F2FE" />
+    </g>
+  </g>
+
+  <!-- Typography / Branding Section -->
+  <text x="360" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="url(#textGrad)" letter-spacing="2">
+    HEXASHIELD AI
+  </text>
+  
+  <text x="362" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#4FACFE" letter-spacing="4">
+    ENTERPRISE AI RED TEAMING &amp; RISK VALIDATION
+  </text>
+
+  <!-- Feature Tags Pill Box Container -->
+  <g transform="translate(360, 235)">
+    <!-- Pill 1: 1B+ Scenarios -->
+    <rect x="0" y="0" width="160" height="34" rx="17" fill="#1E293B" stroke="#00F2FE" stroke-width="1" opacity="0.9" />
+    <text x="80" y="22" font-family="sans-serif" font-size="13" font-weight="600" fill="#00F2FE" text-anchor="middle">1B+ Scenarios</text>
+
+    <!-- Pill 2: OWASP LLM Top 10 -->
+    <rect x="175" y="0" width="180" height="34" rx="17" fill="#1E293B" stroke="#4FACFE" stroke-width="1" opacity="0.9" />
+    <text x="265" y="22" font-family="sans-serif" font-size="13" font-weight="600" fill="#4FACFE" text-anchor="middle">OWASP LLM Top 10</text>
+
+    <!-- Pill 3: Automated GRC -->
+    <rect x="370" y="0" width="165" height="34" rx="17" fill="#1E293B" stroke="#00F2FE" stroke-width="1" opacity="0.9" />
+    <text x="452" y="22" font-family="sans-serif" font-size="13" font-weight="600" fill="#00F2FE" text-anchor="middle">Automated GRC</text>
+  </g>
+
+  <!-- Cygeniq Sub-branding Footer -->
+  <text x="360" y="310" font-family="sans-serif" font-size="14" font-weight="500" fill="#94A3B8" letter-spacing="1">
+    POWERED BY <tspan fill="#FFFFFF" font-weight="700">CYGENIQ</tspan> SECURITY INFRASTRUCTURE
+  </text>
+</svg>
