@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./.github/assets/projecticon.svg" alt="Dual LLM Security Project icon" width="25%">
+  <img src="./.github/assets/ProjectIcon.svg" alt="Dual LLM Security Project icon" width="25%">
 </p>
 
 # HexaShield AI Simulation Pipeline
