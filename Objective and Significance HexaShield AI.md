@@ -15,4 +15,4 @@ When evaluating the design and architectural flow of HexaShield AI, several high
 * **Compliance is Operationalized, Not Just Theoretical:** Navigating standards like the EU AI Act or NIST can easily become a bureaucratic bottleneck. HexaShield’s design demonstrates that compliance must be *programmatically derived* from automated test telemetry, turning audit trails into automated byproducts of security testing.  
 * **Resilience Builds Enterprise Trust:** By systematically exposing edge cases, prompt bypasses, and PII extractions in a sandbox environment before malicious actors do, the solution safeguards enterprise reputation, prevents costly data leaks, and establishes verifiable trustworthiness for large-scale AI deployments.
 
-Would you like to analyze how to integrate specific regulatory compliance checklists (like EU AI Act Article 15 robustness requirements) deeper into this scoring pipeline?
+We can further analyze how to integrate specific regulatory compliance checklists (like EU AI Act Article 15 robustness requirements) deeper into this scoring pipeline?
